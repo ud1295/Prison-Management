@@ -1,0 +1,227 @@
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bck"
+    tools:context=".Main" >
+    
+     <ImageButton
+        android:id="@+id/NominalRegistration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="37dp"
+        android:src="@drawable/handcuffs" />
+    
+    
+    <ImageButton
+        android:id="@+id/Diary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/NominalRegistration"
+        android:layout_below="@id/NominalRegistration"
+        android:layout_marginTop="86dp"
+        android:src="@drawable/and" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignLeft="@+id/CaseRegister"
+        android:layout_marginLeft="16dp"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="19dp"
+        android:textColor="@android:color/white"
+        android:textStyle="italic" />
+
+    <ImageButton
+        android:id="@+id/Payroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView3"
+        android:layout_alignRight="@+id/CaseRegister"
+        android:src="@drawable/calender" />
+
+    <ImageButton
+        android:id="@+id/CaseRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Diary"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="35dp"
+        android:src="@drawable/and" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/textView2"
+        android:text="Parole Record"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="19dp"
+        android:textColor="@android:color/white"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/Diary"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="19dp"
+        android:textColor="@android:color/white"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/NominalRegistration"
+        android:layout_below="@+id/NominalRegistration"
+        android:layout_marginRight="15dp"
+        android:text="New Prisoner"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="19dp"
+        android:textColor="@android:color/white"
+        android:textStyle="italic" />
+  
+</RelativeLayout>
+
+-->
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bck">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/NominalRegistration"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="100dp"
+                android:src="@drawable/handcuffs" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:text="New Prisoner"
+                android:textColor="@android:color/white"
+                android:textStyle="italic"
+                android:textSize="19sp"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <ImageButton
+                android:id="@+id/CaseRegister"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="100dp"
+                android:src="@drawable/and" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:text="Case Register"
+                android:textColor="@android:color/white"
+                android:textStyle="italic"
+                android:textSize="19sp"
+                android:textAppearance="?android:attr/textAppearanceMedium"  />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/Diary"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="100dp"
+                android:src="@drawable/diary" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:text="Diary Generator"
+                android:textColor="@android:color/white"
+                android:textStyle="italic"
+                android:textSize="19sp"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/">
+
+
+
+            <ImageButton
+                android:id="@+id/Payroll"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="100dp"
+                android:src="@drawable/calender" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:text="Payroll Record"
+                android:textColor="@android:color/white"
+                android:textStyle="italic"
+                android:textSize="19sp"
+                android:textAppearance="?android:attr/textAppearanceMedium"  />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

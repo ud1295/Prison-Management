@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bck" >
+
+    <TextView 
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter details"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        />
+    
+    <EditText
+		android:id="@+id/namepayroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+  		android:layout_marginTop="20dp"
+  		android:layout_below="@id/message"
+        android:hint="Enter Name"
+        android:textColorHint="@android:color/white"
+        android:ems="10" >
+        <requestFocus />
+    </EditText>
+    
+    <EditText
+        android:id="@+id/frompayroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:hint="From (Date: DD/MM/YYYY)"
+        android:textColorHint="@android:color/white"        
+        android:layout_alignLeft="@id/namepayroll"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/namepayroll"
+        android:layout_alignRight="@id/namepayroll"
+        android:ems="10"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/topayroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="To (Date: DD/MM/YYYY)"
+        android:layout_alignLeft="@id/namepayroll"
+        android:layout_marginTop="5dp"
+		android:layout_alignRight="@id/namepayroll"
+        android:layout_below="@id/frompayroll"
+        android:textColorHint="@android:color/white"     
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_alignLeft="@id/namepayroll"
+        android:layout_marginTop="5dp"
+		android:layout_alignRight="@id/namepayroll"
+        android:layout_below="@id/topayroll"
+        android:hint="Enter Counter"
+		android:textColorHint="@android:color/white"
+        android:inputType="number" />
+
+       <EditText
+        android:id="@+id/policestationpayroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/counter"
+        android:layout_alignLeft="@id/namepayroll"
+		android:layout_alignRight="@id/namepayroll"
+        android:hint="Enter Police Station"
+		android:textColorHint="@android:color/white"     
+        android:inputType="textPersonName" />
+       
+       <EditText
+        android:id="@+id/why"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/policestationpayroll"
+        android:layout_alignLeft="@id/namepayroll"
+        android:layout_alignRight="@id/namepayroll"
+        android:hint="Enter Reason"
+		android:textColorHint="@android:color/white"     
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/closeparole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/why"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Submit" />
+
+</RelativeLayout>
